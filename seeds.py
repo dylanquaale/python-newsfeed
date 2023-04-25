@@ -21,3 +21,4 @@ db.add_all([
 db.commit()
 # close the session by using db.close()
 db.close()
+
