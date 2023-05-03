@@ -24,3 +24,4 @@ class Post(Base):
     user = relationship('User')
 
 # In MySQL, an ON DELETE CASCADE statement deletes the corresponding foreign key records when a record from the specified table is deleted. In this case, deleting a post from the database also deletes all its associated comments.
+# finish post 
