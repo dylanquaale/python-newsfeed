@@ -1,5 +1,5 @@
 from flask import Flask
-from app.routes import home, dashboard
+from app.routes import home, dashboard, api
 from app.db import init_db
 
 
