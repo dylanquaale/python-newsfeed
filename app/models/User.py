@@ -28,3 +28,8 @@ class User(Base):
         return bcrypt.hashpw(password.encode('utf-8'), salt)
     # assert to check to see if password length is less than 4 throw an err
     # returns encrypted password
+def verify_password(self, password):
+  return bcrypt.checkpw(
+    password.encode('utf-8'),
+    self.password.encode('utf-8')
+  )
